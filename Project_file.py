@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load the Stroke Dataset file (healthcare-dataset-stroke-data.csv)
+# Load the Stroke Dataset file (healthcare-dataset-stroke-data.csv)....
 file_path = 'healthcare-dataset-stroke-data.csv'
 data = pd.read_csv(file_path)
 
@@ -40,3 +40,11 @@ print("\nPercentage of Null Values in Each Column:")
 print(percentage_nulls)
 
 
+#how are you going to deal with null values?
+#In This We will add Median Value of that Column in the Null Cell....
+for column in data.select_dtypes(include=['float64', 'int64']).columns:
+    median_value = data[column].median()
+    data[column].fillna(median_value, inplace=True)
+
+print("\nResults After Dealing with Null Value")
+print(data.isnull().sum())
