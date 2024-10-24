@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load the dataset
+# Load the Stroke Dataset file (healthcare-dataset-stroke-data.csv)
 file_path = 'healthcare-dataset-stroke-data.csv'
 data = pd.read_csv(file_path)
 
@@ -15,12 +15,13 @@ print("\nData Info:")
 print(data.info())
 
 
-# Descriptive statistics
-print("\nDescriptive Statistics:")
+# Describe
+print("\nDescribe:")
 print(data.describe(include='object'))
 
 
-# Find unique values, null values, and percentage of null values
+
+
 # Unique values in each column
 unique_values = {column: data[column].unique() for column in data.columns}
 print("\nUnique Values in Each Column:")
