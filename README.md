@@ -33,4 +33,37 @@ In this section, we will define the problem statement and analyze the basic metr
    - Utilizing the `describe()` function to summarize numerical features of the dataset, providing insights into central tendency, dispersion, and shape of the dataset’s distribution.
 
 
+# **(2) Analyzing Unique Values and Null Values**
+***
+
+In this section, we will analyze the unique values, null values, and their percentages within the healthcare stroke dataset:
+
+1. **Finding Unique Values:**
+   - Identifying unique values in each column to understand the variability and quality of categorical data, which can help spot potential data entry issues.
+
+2. **Finding Null Values:**
+   - Counting the number of null values in each column to assess the completeness of the dataset. This step is crucial for understanding which features may require imputation or further cleaning.
+
+3. **Calculating Percentage of Null Values:**
+   - Computing the percentage of null values for each column relative to the total number of entries. This metric helps prioritize which columns may need attention based on the extent of missing data.
+
+This analysis is essential for ensuring data quality and informing subsequent preprocessing steps.
+
+
+# **(3) Handling Null Values**
+***
+
+In this section, we will outline the approach for dealing with null values in the healthcare stroke dataset:
+
+1. **Identifying Null Values:**
+   - First, we will identify columns with null values and assess their frequency to understand the extent of missing data.
+
+2. **Imputation Strategy:**
+   - For numerical columns, we will use the **median** to fill null values. The median is robust to outliers and provides a better measure of central tendency when the data is skewed.
+
+3. **Checking for Remaining Null Values:**
+   - After imputation, we will check for any remaining null values to ensure that all missing data has been addressed.
+
+This approach aims to maintain data integrity and usability for subsequent analysis and modeling.
+
 
