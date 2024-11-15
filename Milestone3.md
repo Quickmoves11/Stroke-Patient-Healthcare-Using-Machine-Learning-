@@ -42,13 +42,6 @@ The performance of each model varies due to the following reasons:
    - If the dataset has an imbalanced class distribution (e.g., more people did not have a stroke), models may show bias toward predicting the majority class. This can lead to higher accuracy but poor predictive performance for the minority class (stroke). In such cases, metrics like **precision**, **recall**, and **F1-score** should be considered.
 
 
-## Technologies Used:
-- Python
-- `scikit-learn` for machine learning models
-- `pandas` for data manipulation
-- `numpy` for numerical operations
-- `matplotlib` and `seaborn` for data visualization
-
 ### RMSE Comparison Plot
 Here is the RMSE comparison of all models:
 
@@ -67,4 +60,11 @@ Below is the comparison of the actual vs predicted values for Logistic and Linea
 ![Figure_3](https://github.com/user-attachments/assets/f7d80c9f-1de6-4663-9fa0-d27ef68d317b)
 
 
+
+## Technologies Used:
+- Python
+- `scikit-learn` for machine learning models
+- `pandas` for data manipulation
+- `numpy` for numerical operations
+- `matplotlib` and `seaborn` for data visualization
 ...
