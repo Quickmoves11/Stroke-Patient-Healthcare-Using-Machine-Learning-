@@ -95,18 +95,40 @@ print(f"Logistic Regression Accuracy: {log_reg_accuracy:.2f}%")# Accuracy for Lo
 
 # Task 2 - **Visualizations**
 
-# Plotting the RMSE for Linear, Lasso, and Ridge Regression Models, and Accuracy for Logistic Regression
-plt.figure(figsize=(12, 6))
+# Plotting RMSE values
+models = ['Linear Regression', 'Lasso Regression', 'Ridge Regression', 'Logistic Regression']
+rmse_values = [linear_reg_rmse, lasso_reg_rmse, ridge_reg_rmse, Log_reg_rmse]
 
-# Bar plot for RMSE of regression models and accuracy for Logistic Regression
-plt.bar(['Linear Regression', 'Lasso Regression', 'Ridge Regression'], 
-        [linear_reg_rmse, lasso_reg_rmse, ridge_reg_rmse], color=['blue', 'green', 'red'], alpha=0.7, label='RMSE')
-plt.bar(['Logistic Regression'], [log_reg_accuracy], color='purple', alpha=0.7, label='Accuracy')
+# Plotting RSME Values
+plt.figure(figsize=(10, 6))
+plt.bar(models, rmse_values, color=['blue', 'green', 'red', 'purple'], alpha=0.7)
 
-plt.title('Model Comparison: RMSE vs Accuracy')
-plt.ylabel('Score (RMSE/Accuracy)')
+# Adding titles and labels
+plt.title('Model Comparison: RMSE of Regression Models & Logistic Regression')
+plt.ylabel('RMSE (%)')
+plt.xlabel('Models')
+
+# Displaying the plot
 plt.tight_layout()  # Adjust layout for better visualization
-plt.legend(loc='upper left')
+plt.show()
+
+
+#Plotting Accuracy 
+# Model names and accuracy
+models = ['Linear Regression', 'Lasso Regression', 'Ridge Regression', 'Logistic Regression']
+accuracies = [linear_reg_accuracy, lasso_reg_accuracy, ridge_reg_accuracy, log_reg_accuracy]
+
+# Plotting the accuracies
+plt.figure(figsize=(10, 6))
+plt.bar(models, accuracies, color=['blue', 'green', 'red', 'purple'], alpha=0.7)
+
+# Adding titles and labels
+plt.title('Model Comparison: Accuracy (R² for Regression Models)')
+plt.ylabel('Accuracy / R² (%)')
+plt.xlabel('Models')
+
+# Display the plot
+plt.tight_layout()  # Adjust layout for better visualization
 plt.show()
 
 # Task 2 - **Visualizing Predictions of Logistic Regression and Linear Regression**
