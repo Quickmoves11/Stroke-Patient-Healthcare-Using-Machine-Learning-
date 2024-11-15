@@ -39,6 +39,11 @@ y = df_model['stroke']  # dependent variable
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Task 1 - **Building and training the models**
+#Basic Machine Learning Models
+  #1.Linear Regression
+  #2.Lasso Regression
+  #3.Ridge Regression
+  #4.Logistic Regression
 
 # Linear Regression Model
 linear_reg = LinearRegression()
