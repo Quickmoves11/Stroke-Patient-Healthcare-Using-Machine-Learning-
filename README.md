@@ -1,4 +1,4 @@
-# Infosys_Stroke-Patient-Healthcare-Using-Deep-Learning
+# Stroke-Patient-Healthcare-Using-Deep-Learning
 
 This project leverages a dataset of stroke patient data to build various machine learning models to predict stroke risk based on medical history, lifestyle factors, and health metrics. The dataset includes information such as gender, age, hypertension status, heart disease status, marital status, work type, residence type, glucose levels, BMI, and smoking status.
 
