@@ -66,7 +66,7 @@ Rigid_reg_rmse = np.sqrt(mean_squared_error(y_test, Rigid_reg_predictions))
 Rigid_reg_acce = Rigid_reg.score(X_test, y_test)
 
 #Logistic Regression
-logistic_reg = LogisticRegression()
+logistic_reg = LogisticRegression(class_weight='balanced', random_state=41, max_iter=1000)
 logistic_reg.fit(X_train, y_train)
 Logistic_pred = logistic_reg.predict(X_test)
 Log_reg_rmse = np.sqrt(mean_squared_error(y_test, Logistic_pred))
